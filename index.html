@@ -1,3 +1,6 @@
+<?php 
+include('dbconnect.php');
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -212,9 +215,48 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h3>The buttons below are impossible to resist.</h3>
-                    <a href="#" class="btn btn-lg btn-light">Click Me!</a>
-                    <a href="#" class="btn btn-lg btn-dark">Look at Me!</a>
+                   <h2 class="section-heading">Let's Get In Touch!</h2>
+                    <hr class="primary">
+                    <h3>  Fill the form and send it i will get back to you as soon as possible!</h3>
+                </div>
+                <form action="index.php" method="POST" >
+                <div class="col-lg-4 col-lg-offset-2 text-center">
+                    <br>
+                    <div class="form-group">
+                <div class="input-group">
+                <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
+                <input type="text" name="name" class="form-control" placeholder="Enter Your Name" maxlength="50"  />
+                </div>
+                
+            </div>
+            
+            
+                </div>
+                <div class="col-lg-4 text-center">
+                    <br>
+                    <div class="form-group">
+                <div class="input-group">
+                <span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span></span>
+                <input type="email" name="email" class="form-control" placeholder="Enter Your Email" maxlength="40" />
+                </div>
+                 </div>
+                  </div>
+                 <div class="col-lg-4 col-lg-offset-2 text-center">
+                    <br>
+                    <div class="form-group">
+                <div class="input-group">
+                
+                 <button type="submit" class="btn btn-block btn-primary" name="signup" value="signup" >Fill the form</button>
+                </div>
+                
+            </div>
+            
+            
+                </div>
+                 
+               
+                </form>
+
                 </div>
             </div>
         </div>
@@ -235,7 +277,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-10 col-lg-offset-1 text-center">
-                    <h4><strong>Start Bootstrap</strong>
+                    <h4><strong>Rotterdamers</strong>
                     </h4>
                     <p>3481 Melrose Place
                         <br>Beverly Hills, CA 90210</p>
@@ -257,7 +299,7 @@
                         </li>
                     </ul>
                     <hr class="small">
-                    <p class="text-muted">Copyright &copy; Your Website 2014</p>
+                    <p class="text-muted">Copyright &copy; Your Website 2016</p>
                 </div>
             </div>
         </div>
@@ -347,3 +389,19 @@
 </body>
 
 </html>
+<?php
+function signup($name, $email){
+    global $db;
+    $updated_at = $created_at = date("Y-m-d H:i:s");
+    $query_string = "insert into users (name , email , created_at, updated_at) values('$name' , '$email' , '$created_at', '$updated_at')";
+    $result = mysqli_query($db , $query_string);
+    if(!$result){
+        die ("<script>alert(\"Fail To Fill The Form please try again later " . mysqli_errno(). "\");</script>");
+    } else {
+        echo "<script>alert(\"Thanks For Fill the Form\");</script>";
+    }
+}
+if (isset($_POST["signup"])) {
+    signup($_POST["name"],  $_POST["email"]);
+} 
+?>
