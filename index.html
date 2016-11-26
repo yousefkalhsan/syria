@@ -1,4 +1,4 @@
-<?php 
+<?php
 include('dbconnect.php');
 ?>
 <!DOCTYPE html>
@@ -12,7 +12,7 @@ include('dbconnect.php');
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Rotterdamers</title>
+    <title>syria</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -227,10 +227,10 @@ include('dbconnect.php');
                 <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
                 <input type="text" name="name" class="form-control" placeholder="Enter Your Name" maxlength="50"  />
                 </div>
-                
+
             </div>
-            
-            
+
+
                 </div>
                 <div class="col-lg-4 text-center">
                     <br>
@@ -245,16 +245,16 @@ include('dbconnect.php');
                     <br>
                     <div class="form-group">
                 <div class="input-group">
-                
+
                  <button type="submit" class="btn btn-block btn-primary" name="signup" value="signup" >Fill the form</button>
                 </div>
-                
+
             </div>
-            
-            
+
+
                 </div>
-                 
-               
+
+
                 </form>
 
                 </div>
@@ -403,5 +403,5 @@ function signup($name, $email){
 }
 if (isset($_POST["signup"])) {
     signup($_POST["name"],  $_POST["email"]);
-} 
+}
 ?>
