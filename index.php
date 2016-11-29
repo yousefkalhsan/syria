@@ -1,6 +1,7 @@
    <?php include('dbconnect.php');
 ?>
 <!DOCTYPE html>
+<html lang="en">   -->
 
 <head>
 
@@ -209,6 +210,8 @@
         </div>
     </header>
  
+<!-- ------------------------- -->
+
 
 
   
@@ -298,7 +301,8 @@
                                 
                             </div>
                         </div>
-                   
+                    </div>
+                    <!-- /.row (nested) -->
                 </div>
                 <!-- /.col-lg-10 -->
             </div>
@@ -309,45 +313,9 @@
 
     <!-- Callout -->
     <aside class="callout">
-       <div class="photo-slider-demo">
-    <div class="photo-slide">
-        <figure class="slide-image" id="slide-demo-1"></figure>
-        <div class="slide-text slide-text-left">
-            <h1 class="stext yellow">Lorem ipsum dolor.</h1><br>
-            <h3 class="stext middle-grey">Lorem ipsum dolor sit amet.</h3>
+        <div class="text-vertical-center">
+            <h1>Vertically Centered Text</h1>
         </div>
-    </div>
-    <div class="photo-slide">
-        <figure class="slide-image" id="slide-demo-2"></figure>
-        <div class="slide-text slide-text-right">
-            <h1 class="stext red">Lorem ipsum dolor.</h1><br>
-            <h4 class="stext light-grey">Lorem ipsum dolor sit <a href="#" onclick="return false;">amet</a>.</h4> 
-        </div>
-    </div>
-    <div class="photo-slide">
-        <figure class="slide-image" id="slide-demo-3"></figure>
-        <div class="slide-text slide-text-left">
-            <h1 class="stext light-grey">Lorem ipsum dolor.</h1><br>
-            <p class="stext amethyst">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, ad!</hp> 
-        </div>
-    </div>
-    <div class="photo-slide">
-        <figure class="slide-image" id="slide-demo-4"></figure>
-        <div class="slide-text slide-text-right">
-            <h1 class="stext">Lorem ipsum </h1><br>
-            <p class="stext">Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br> Lorem ipsum dolor sit amet.</p><br>
-            <button class="btn btn-green stext transparent">Login</button>
-        </div>
-        </div>
-</div> <!-- /photo-slider-demo -->
-
-<div class="fluid mtop30">  
-  <div class="grid8 offset2 center">
-    <p>Responsive Photo Slider from <a href="http://elrumordelaluz.github.io/newbancomail/">New BM Pattern Library</a></p>
-    <p class="small">Only css animations + :hover behavior.<br> Also customizable @mixin. <a href="https://github.com/elrumordelaluz/newbancomail/blob/master/sass/base/_mixins.scss#L278">More</a></p>
-   </div>  
-</div>
-
     </aside>
 
     <!-- Portfolio -->
@@ -403,9 +371,9 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                    <h2 class="section-heading">Let's Get In Touch!</h2>
-                    
+                    <hr class="primary">
                     <h3>  Fill the form and send it i will get back to you as soon as possible!</h3>
-                
+                </div>
                 <form action="home.php" method="POST" >
                 <div class="col-lg-4 col-lg-offset-2 text-center">
                     <br>
