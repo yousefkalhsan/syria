@@ -27,16 +27,16 @@ body {
     padding: 0;
     font-size: 4.5em;
     font-weight: 700;
-    color: white;
+    color: black;
 }
 .text-vertical-center h3 {
-    color: white;
+    color: black;
 }
 /* Custom Button Styles */
 
 .btn-dark {
     border-radius: 0;
-    color: white;
+    color: black;
     background-color: rgba(0,0,0,0.4);
 }
 .btn btn-block btn-primary {

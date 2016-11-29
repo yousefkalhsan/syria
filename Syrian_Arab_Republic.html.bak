@@ -1,6 +1,5 @@
-   <?php include('dbconnect.php');
-?>
 <!DOCTYPE html>
+<html lang="en">
 
 <head>
 
@@ -10,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Syria</title>
+    <title>Syrian Arab Republic</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -22,15 +21,6 @@
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
 
-    <!-- voor question part -->
-    <link rel="stylesheet" type="text/css" href="css/modal.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
-    <script src="jquery-3.1.1.min.js"></script> 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="css/formwizard.css">
-    <script type="text/javascript" src="js/formwizard.js"></script>
-
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -38,7 +28,15 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-</head>
+
+	<!-- Start WOWSlider.com HEAD section --> <!-- add to the <head> of your page -->
+	<link rel="stylesheet" type="text/css" href="engine0/style.css" />
+	<script type="text/javascript" src="engine0/jquery.js"></script>
+	<!-- End WOWSlider.com HEAD section -->
+	<!-- Start WOWSlider.com HEAD section --> <!-- add to the <head> of your page -->
+	<link rel="stylesheet" type="text/css" href="engine0/style.css" />
+	<!--script type="text/javascript" src="engine0/jquery.js"></script-->
+	<!-- End WOWSlider.com HEAD section --></head>
 
 <body>
 
@@ -49,7 +47,7 @@
             <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
             
             <li>
-                <a href="#index.php" onclick=$("#menu-close").click();>Home</a>
+                <a href="#home.php" onclick=$("#menu-close").click();>Home</a>
             </li>
             <li>
                 <a href="#about" onclick=$("#menu-close").click();>About</a>
@@ -57,162 +55,50 @@
             <li>
                 <a href="#services" onclick=$("#menu-close").click();>Services</a>
             </li>
-          
+           
             <li>
                 <a href="#contact" onclick=$("#menu-close").click();>Contact</a>
             </li>
         </ul>
     </nav>
 
-    <!-- Header -->
-    <header id="top" class="header">  
-        <div class="text-vertical-center">
-
-            <h1>SYRIA</h1>
-            <h3> Would you like to test your knowledge about syria ? </h3>
-            <br>
-            <a href="#successModal" data-toggle="modal" class="btn btn-dark btn-lg">Start now</a>
-        </div>
-<!-- test qustion -->
-        <div class="modal fade" id="successModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header modal-header-success">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">[ × ]</button>
-                        <h2>Questions</h2>
-                    </div>
-                    <div class="modal-body">
-                        <div class="stepwizard">
-                            <div class="stepwizard-row setup-panel">
-                                <div class="stepwizard-step">
-                                    <a href="#step-1" type="button" class="btn btn-primary btn-circle">1</a>
-                                    <p>Question #1</p>
-                                </div>
-                                <div class="stepwizard-step">
-                                    <a href="#step-2" type="button" class="btn btn-primary btn-circle" disabled="disabled">2</a>
-                                    <p>Question #2</p>
-                                </div>
-                                <div class="stepwizard-step">
-                                    <a href="#step-3" type="button" class="btn btn-primary btn-circle" disabled="disabled">3</a>
-                                    <p>Question #3</p>
-                                </div>
-                                <div class="stepwizard-step">
-                                    <a href="#step-4" type="button" class="btn btn-primary btn-circle" disabled="disabled">4</a>
-                                    <p>Question #4</p>
-                                </div>
-                                <div class="stepwizard-step">
-                                    <a href="#step-5" type="button" class="btn btn-primary btn-circle" disabled="disabled">5</a>
-                                    <p>Question #5</p>
-                                </div>
-                            </div>
-                        </div>
-                        <form role="form">
-                            <div class="row setup-content" id="step-1">
-                                <div class="col-md-12 col-xs-12">
-                                    <h3>In which continent syria is located ?</h3>
-                                    <div class="form-group">
-                                        <div class="radio">
-                                            <label><input type="radio" name="answer1" value="asia">Asia</label>
-                                        </div>
-                                        <div class="radio">
-                                            <label><input type="radio" name="answer1" value="africa">Africa</label>
-                                        </div>
-                                        <div class="radio">
-                                            <label><input type="radio" name="answer1" value="europe">Europe</label>
-                                        </div>
-                                        <div class="radio">
-                                            <label><input type="radio" name="answer1" value="south america">South America</label>
-                                        </div>
-                                    </div>
-                                    <button type="button" class="btn btn-danger btn-lg pull-left" data-dismiss="modal">Close</button>
-                                    <button class="btn btn-primary nextBtn btn-lg pull-right" type="button" >Next</button>
-                                </div>
-                            </div>
-                            <div class="row setup-content" id="step-2">
-                                <div class="col-md-12 col-xs-12">
-                                    <h3>What language syrians speak ?</h3>
-                                    <div class="form-group">
-                                        <div class="radio">
-                                            <label><input type="radio" name="answer2" value="asia">Turkish</label>
-                                        </div>
-                                        <div class="radio">
-                                            <label><input type="radio" name="answer2" value="africa">Persian</label>
-                                        </div>
-                                        <div class="radio">
-                                            <label><input type="radio" name="answer2" value="europe">French</label>
-                                        </div>
-                                        <div class="radio">
-                                            <label><input type="radio" name="answer2" value="south america">Arabic</label>
-                                        </div>
-                                    </div>
-                                    <button type="button" class="btn btn-danger btn-lg pull-left" data-dismiss="modal">Close</button>
-                                    <button class="btn btn-primary nextBtn btn-lg pull-right" type="button" >Next</button>
-                                </div>
-                            </div>
-
-                            <div class="row setup-content" id="step-3">
-                                <div class="col-md-12 col-xs-12">
-                                    <h3>Did you try already syrian food ?</h3>
-                                    <div class="form-group">
-                                    <div>
-                                          <input style="width: 200px;height: 100px; margin-right: 15px" type="image" src="img/1.jpg" alt="Submit">
-                                          <input style="width: 200px;height: 100px"  type="image" src="img/2.jpg" alt="Submit">
-                                    </div>
-                                        <div class="radio">
-                                            <label><input type="radio" name="answer3" value="asia">Yes</label>
-                                        </div>
-                                        <div class="radio">
-                                            <label><input type="radio" name="answer3" value="africa">NO</label>
-                                        </div>
-                                       
-                                    </div>
-                                    <button type="button" class="btn btn-danger btn-lg pull-left" data-dismiss="modal">Close</button>
-                                    <button class="btn btn-primary nextBtn btn-lg pull-right" type="button" >Next</button>
-                                </div>
-                           </div>
-                                <div class="row setup-content" id="step-4">
-                                <div class="col-md-12 col-xs-12">
-                                    <h3>Are you interested in antiquities places ?</h3>
-                                    <div class="form-group">
-                                    <div>
-                                          <input style="width: 200px;height: 100px; margin-right: 15px" type="image" src="img/3.jpg" alt="Submit">
-                                          <input style="width: 200px;height: 100px"  type="image" src="img/4.jpg" alt="Submit">
-                                    </div>
-                                        <div class="radio">
-                                            <label><input type="radio" name="answer3" value="asia">Yes</label>
-                                        </div>
-                                        <div class="radio">
-                                            <label><input type="radio" name="answer3" value="africa">NO</label>
-                                        </div>
-                                       
-                                    </div>
-                                    <button type="button" class="btn btn-danger btn-lg pull-left" data-dismiss="modal">Close</button>
-                                    <button class="btn btn-primary nextBtn btn-lg pull-right" type="button" >Next</button>
-                                </div>
-                            </div>
-                            <div class="row setup-content" id="step-5">
-                                <div class="col-xs-12">
-                                    <div class="col-md-12">
-                                        <h3>Done</h3>
-                                        <button class="btn btn-success btn-lg pull-right" type="submit">Finish!</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                   
-                </div>
-            </div>
-        </div>
-    </header>
- 
+    
     <!-- About -->
-    <section id="about" class="about">
+    
+	<section id="about" class="about">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2>Stylish Portfolio is the perfect theme for your next project!</h2>
-                    <p class="lead">This theme features some wonderful photography courtesy of <a target="_blank" href="http://join.deathtothestockphoto.com/">Death to the Stock Photo</a>.</p>
+                   <div class="wrapper">
+            
+            
+
+                
+                    
+
+                    <article class="card__article">
+                        <h2><a href="#">Syrian Arab Republic</a></h2>
+
+                        <h4>Syria (Listeni/ˈsɪ.rɪə/; Arabic: سوريا‎‎ Sūriyā), officially known as the Syrian Arab Republic (Arabic: الجمهورية العربية السورية‎‎ al-Jumhūrīyah al-ʻArabīyah as-Sūrīyah), is a country in Western Asia, bordering Lebanon and the Mediterranean Sea to the west, Turkey to the north, Iraq to the east, Jordan to the south, and Israel to the southwest. Syria's capital and largest city is Damascus. </h4>
+
+<h4>A country of fertile plains, high mountains, and deserts, Syria is home to diverse ethnic and religious groups, including Syrian Arabs, Greeks, Armenians, Assyrians, Kurds, Circassians,[7] Mandeans[8] and Turks. Religious groups include Sunnis, Christians, Alawites, Druze, Mandeans, Shiites, Salafis, and Yazidis. Sunni Arabs make up the largest population group in Syria.
+</h4>
+<h4>In English, the name "Syria" was formerly synonymous with the Levant (known in Arabic as al-Sham), while the modern state encompasses the sites of several ancient kingdoms and empires, including the Eblan civilization of the 3rd millennium BC. Its capital Damascus and largest city Aleppo are among the oldest continuously inhabited cities in the world.[9] In the Islamic era, Damascus was the seat of the Umayyad Caliphate and a provincial capital of the Mamluk Sultanate in Egypt.
+</h4>
+<h4>The modern Syrian state was established after the end of centuries of Ottoman control in World War I as a French mandate, and represented the largest Arab state to emerge from the formerly Ottoman-ruled Arab Levant. It gained independence as a parliamentary republic on 24 October 1945 when Syria became a founding member of the United Nations, an act which legally ended the former French Mandate – although French troops did not leave the country until April 1946. The post-independence period was tumultuous, and a large number of military coups and coup attempts shook the country in the period 1949–71. In 1958, Syria entered a brief union with Egypt called the United Arab Republic, which was terminated by the 1961 Syrian coup d'état. The Arab Republic of Syria came into being in late 1961 after December 1 constitutional referendum, and was increasingly unstable until the Ba'athist coup d'état, since which the Ba'ath Party has maintained its power. Syria was under Emergency Law from 1963 to 2011, effectively suspending most constitutional protections for citizens. Bashar al-Assad has been president since 2000 and was preceded by his father Hafez al-Assad, who was in office from 1970 to 2000.[10]
+</h4>
+<h4>Syria is a member of one international organization other than the United Nations, the Non-Aligned Movement; it has become suspended from the Arab League on November 2011[11] and the Organisation of Islamic Cooperation,[12] and self-suspended from the Union for the Mediterranean.[13] Since March 2011, Syria has been embroiled in an uprising against Assad and the Ba'athist government as part of the Arab Spring, a crackdown that contributed to the Syrian Civil War and to Syria's becoming one of the most violent countries in the world.[14] A number of pseudo-state entities have since emerged on Syrian territories, including the Syrian Opposition, the Federation of Northern Syria and Islamic State of Iraq and the Levant.</h4>
+                    </article>
+                </div>
+
+                <div class="card__action">
+                    
+                    
+                </div>
+            </div>
+
+            <h3 class="text-center">Created By <a href="#">Yousef Kalhasan</a></h3>
+        </div>
                 </div>
             </div>
             <!-- /.row -->
@@ -226,7 +112,7 @@
         <div class="container">
             <div class="row text-center">
                 <div class="col-lg-10 col-lg-offset-1">
-                    <h2>Learn More</h2>
+                    <h2>Our Services</h2>
                     <hr class="small">
                     <div class="row">
                         <div class="col-md-3 col-sm-6">
@@ -234,7 +120,7 @@
                                 <figure class="snip1566">
   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Jordan_(orthographic_projection).svg/440px-Jordan_(orthographic_projection).svg.png" alt="sq-sample14" />
   <figcaption><i class="ion-android-add"></i></figcaption>
-  <a href="Syrian_Arab_Republic.html"></a>
+  <a href="index1.html"></a>
 </figure>
 
                                 <h4>
@@ -249,7 +135,7 @@
                                <figure class="snip1566">
   <img src="https://drscdn.500px.org/photo/165979687/w%3D440_h%3D440/0a2ac4e2a0f7a2578cd0c02fd9c7d508?v=3" alt="sq-sample14" />
   <figcaption><i class="ion-android-add"></i></figcaption>
-  <a href="Syria_History.html"></a>
+  <a href="index2.html"></a>
 </figure>
 
                                 <h4>
@@ -264,7 +150,7 @@
                                <figure class="snip1566">
   <img src="https://s-media-cache-ak0.pinimg.com/736x/f6/8e/df/f68edf2da67693711a2b7161a0f5c616.jpg" alt="sq-sample14" />
   <figcaption><i class="ion-android-add"></i></figcaption>
-  <a href="Syrian_Food.html"></a>
+  <a href="index3.html"></a>
 </figure>
 
                                 <h4>
@@ -279,7 +165,7 @@
                                <figure class="snip1566">
   <img src="https://s-media-cache-ak0.pinimg.com/736x/c0/43/da/c043da94da4ea4c84f6783e823712db0.jpg" alt="sq-sample14" />
   <figcaption><i class="ion-android-add"></i></figcaption>
-  <a href="Tourism_in_Syria.html"></a>
+  <a href="index4.html"></a>
 </figure>
 
                                 <h4>
@@ -298,15 +184,22 @@
         </div>
         <!-- /.container -->
     </section>
-
-    <!-- Callout -->
-    <aside class="callout">
-        <div class="text-vertical-center">
-            <h1>Vertically Centered Text</h1>
+<!-- About -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Stylish Portfolio is the perfect theme for your next project!</h2>
+                    <p class="lead">This theme features some wonderful photography courtesy of <a target="_blank" href="http://join.deathtothestockphoto.com/">Death to the Stock Photo</a>.</p>
+                </div>
+            </div>
+            <!-- /.row -->
         </div>
-    </aside>
-
+        <!-- /.container -->
+    </section>
     
+
+   
 
     <!-- Call to Action -->
     <aside class="call-to-action bg-primary">
@@ -314,11 +207,12 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                    <h2 class="section-heading">Let's Get In Touch!</h2>
+                    <hr class="primary">
                     <h3>  Fill the form and send it i will get back to you as soon as possible!</h3>
                 </div>
                 <form action="home.php" method="POST" >
                 <div class="col-lg-4 col-lg-offset-2 text-center">
-                    
+                    <br>
                     <div class="form-group">
                 <div class="input-group">
                 <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
@@ -330,7 +224,7 @@
             
                 </div>
                 <div class="col-lg-4 text-center">
-                   
+                    <br>
                     <div class="form-group">
                 <div class="input-group">
                 <span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span></span>
@@ -403,11 +297,7 @@
         <a id="to-top" href="#top" class="btn btn-dark btn-lg"><i class="fa fa-chevron-up fa-fw fa-1x"></i></a>
     </footer>
 
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+    
 
     <!-- Custom Theme JavaScript -->
     <script>
@@ -486,19 +376,3 @@
 </body>
 
 </html>
-<?php
-function signup($name, $email){
-    global $db;
-    $updated_at = $created_at = date("Y-m-d H:i:s");
-    $query_string = "insert into users (name , email , created_at, updated_at) values('$name' , '$email' , '$created_at', '$updated_at')";
-    $result = mysqli_query($db , $query_string);
-    if(!$result){
-        die ("<script>alert(\"Fail To Fill The Form please try again later " . mysqli_errno(). "\");</script>");
-    } else {
-        echo "<script>alert(\"Thanks For Fill the Form\");</script>";
-    }
-}
-if (isset($_POST["signup"])) {
-    signup($_POST["name"],  $_POST["email"]);
-} 
-?>
