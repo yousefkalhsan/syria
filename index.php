@@ -209,8 +209,10 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2>Stylish Portfolio is the perfect theme for your next project!</h2>
-                    <p class="lead">This theme features some wonderful photography courtesy of <a target="_blank" href="http://join.deathtothestockphoto.com/">Death to the Stock Photo</a>.</p>
+                    <h2>The city of Damascus is forever attached to Christian </h2> 
+                    <p class="lead"> beliefs because the New Testament preaches that the conversion of Paul 
+                        <br>the Apostle happened on his way to Damascus.</p>
+                     
                 </div>
             </div>
             <!-- /.row -->
@@ -300,7 +302,9 @@
     <!-- Callout -->
     <aside class="callout">
         <div class="text-vertical-center">
-            <h1>Vertically Centered Text</h1>
+           <h2>Palmyra, a city dripping with history and culture </h2>
+                   <p class="lead"> was deliberately destroyed by the Islamic State of Levant due to its polytheistic statues. 
+                    <br>It is a UNESCO World Heritage Site and a rare gem of the ancient world.</p>
         </div>
     </aside>
 
@@ -357,15 +361,7 @@
         </div>
     </aside>
 
-    <!-- Map 
-    <section id="contact" class="map">
-        <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A&amp;output=embed"></iframe>
-        <br />
-        <small>
-            <a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A"></a>
-        </small>
-        </iframe>
-    </section>  -->
+    
 <section id="contactmap" style="width: 100%; height: 300px;">
 
     
@@ -393,11 +389,11 @@
                 <div class="col-lg-10 col-lg-offset-1 text-center">
                     <h4><strong>Syria</strong>
                     </h4>
-                    <p>
-                        <br></p>
+                    <p>Yousef, Farid , Abdullah
+                        <br> Code Masters</p>
                     <ul class="list-unstyled">
                         <li><i class="fa fa-phone fa-fw"></i> (123) 456-7890</li>
-                        <li><i class="fa fa-envelope-o fa-fw"></i> <a href="mailto:name@example.com">SYRIAN@example.com</a>
+                        <li><i class="fa fa-envelope-o fa-fw"></i> <a href="mailto:@example.com">SYRIAN@gmail.sy</a>
                         </li>
                     </ul>
                     <br>
