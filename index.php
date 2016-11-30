@@ -1,5 +1,4 @@
-   <?php include('dbconnect.php');
-?>
+
 <!DOCTYPE html>
 
 <head>
@@ -10,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Syria</title>
+    <title>SYRIA</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -24,8 +23,7 @@
 
     <!-- voor question part -->
     <link rel="stylesheet" type="text/css" href="css/modal.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
-    <script src="jquery-3.1.1.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" > 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" type="text/css" href="css/formwizard.css">
@@ -47,9 +45,9 @@
     <nav id="sidebar-wrapper">
         <ul class="sidebar-nav">
             <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
-
+            
             <li>
-                <a href="#index.php" onclick=$("#menu-close").click();>Home</a>
+                <a href="index.php" onclick=$("#menu-close").click();>Home</a>
             </li>
             <li>
                 <a href="#about" onclick=$("#menu-close").click();>About</a>
@@ -57,7 +55,7 @@
             <li>
                 <a href="#services" onclick=$("#menu-close").click();>Services</a>
             </li>
-
+          
             <li>
                 <a href="#contact" onclick=$("#menu-close").click();>Contact</a>
             </li>
@@ -65,7 +63,7 @@
     </nav>
 
     <!-- Header -->
-    <header id="top" class="header">
+    <header id="top" class="header">  
         <div class="text-vertical-center">
 
             <h1>SYRIA</h1>
@@ -164,7 +162,7 @@
                                         <div class="radio">
                                             <label><input type="radio" name="answer3" value="africa">NO</label>
                                         </div>
-
+                                       
                                     </div>
                                     <button type="button" class="btn btn-danger btn-lg pull-left" data-dismiss="modal">Close</button>
                                     <button class="btn btn-primary nextBtn btn-lg pull-right" type="button" >Next</button>
@@ -184,7 +182,7 @@
                                         <div class="radio">
                                             <label><input type="radio" name="answer3" value="africa">NO</label>
                                         </div>
-
+                                       
                                     </div>
                                     <button type="button" class="btn btn-danger btn-lg pull-left" data-dismiss="modal">Close</button>
                                     <button class="btn btn-primary nextBtn btn-lg pull-right" type="button" >Next</button>
@@ -200,12 +198,12 @@
                             </div>
                         </form>
                     </div>
-
+                   
                 </div>
             </div>
         </div>
     </header>
-
+ 
     <!-- About -->
     <section id="about" class="about">
         <div class="container">
@@ -241,7 +239,7 @@
                                     <strong>Syrian Arab Republic</strong>
                                 </h4>
                                 <p>Syria, officially known as the Syrian Arab Republic, is a country in Western Asia, bordering Lebanon and the Mediterranean Sea to the west, Turkey to the north, Iraq to the east, Jordan to the south, and Israel to the southwest</p>
-
+                                
                             </div>
                         </div>
                         <div class="col-md-3 col-sm-6">
@@ -256,7 +254,7 @@
                                     <strong>Syria History</strong>
                                 </h4>
                                 <p>History of Syria covers the developments in the region of Syria (Greek Συρία) and modern Syrian Arab Republic. Syria most likely derives from the name of the Neo-Assyrian Empire established in the 10th century BC.</p>
-
+                                
                             </div>
                         </div>
                         <div class="col-md-3 col-sm-6">
@@ -271,7 +269,7 @@
                                     <strong>Syrian Food</strong>
                                 </h4>
                                 <p>Street food. Are fried balls or patties of spiced, mashed chickpeas. Falafel is most often served in Syrian flat bread, with pickles, tahina, hummus, sumac, cut vegetable salad and often, Shatta, a hot sauce, the type used depending on the origin of the falafel maker.</p>
-
+                                
                             </div>
                         </div>
                         <div class="col-md-3 col-sm-6">
@@ -286,7 +284,7 @@
                                     <strong>Tourism in Syria</strong>
                                 </h4>
                                 <p>Although it has some of the oldest cities in Western Asia, such as Damascus and Aleppo.</p>
-
+                                
                             </div>
                         </div>
                     </div>
@@ -306,7 +304,7 @@
         </div>
     </aside>
 
-
+    
 
     <!-- Call to Action -->
     <aside class="call-to-action bg-primary">
@@ -318,19 +316,19 @@
                 </div>
                 <form action="home.php" method="POST" >
                 <div class="col-lg-4 col-lg-offset-2 text-center">
-
+                    
                     <div class="form-group">
                 <div class="input-group">
                 <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
                 <input type="text" name="name" class="form-control" placeholder="Enter Your Name" maxlength="50"  />
                 </div>
-
+                
             </div>
-
-
+            
+            
                 </div>
                 <div class="col-lg-4 text-center">
-
+                   
                     <div class="form-group">
                 <div class="input-group">
                 <span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span></span>
@@ -342,16 +340,16 @@
                     <br>
                     <div class="form-group">
                 <div class="input-group">
-
+                
                  <button type="submit" class="btn btn-block btn-primary" name="signup" value="signup" >Fill the form</button>
                 </div>
-
+                
             </div>
-
-
+            
+            
                 </div>
-
-
+                 
+               
                 </form>
 
                 </div>
@@ -359,7 +357,7 @@
         </div>
     </aside>
 
-    <!-- Map -->
+    <!-- Map 
     <section id="contact" class="map">
         <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A&amp;output=embed"></iframe>
         <br />
@@ -367,7 +365,26 @@
             <a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A"></a>
         </small>
         </iframe>
-    </section>
+    </section>  -->
+<section id="contactmap" style="width: 100%; height: 300px;">
+
+    
+</section>
+<script src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyAqpk72KH0pHQ1e0Inyiiz5O_AnjY4vcaQ"></script>
+    <script type="text/javascript">
+        
+        var mapCords = new google.maps.LatLng(34.5693643,38.2629768);
+        var mapOptions = {zoom: 6,center: mapCords, mapTypeId: google.maps.MapTypeId.ROADMAP}    
+        var map = new google.maps.Map(document.getElementById("contactmap"), mapOptions);
+
+        var cords = new google.maps.LatLng(34.5693643,38.2629768);
+        var marker = new google.maps.Marker({position: cords, 
+                                             map: map, 
+                                             title: "Syria",
+                                             icon: 'img/pin.png'}
+                                           );
+                                   
+    </script>
 
     <!-- Footer -->
     <footer>
@@ -402,13 +419,6 @@
         </div>
         <a id="to-top" href="#top" class="btn btn-dark btn-lg"><i class="fa fa-chevron-up fa-fw fa-1x"></i></a>
     </footer>
-
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-
     <!-- Custom Theme JavaScript -->
     <script>
     // Closes the sidebar menu
@@ -422,6 +432,7 @@
         $("#sidebar-wrapper").toggleClass("active");
     });
     // Scrolls to the selected menu item on the page
+    /*
     $(function() {
         $('a[href*=#]:not([href=#],[data-toggle],[data-target],[data-slide])').click(function() {
             if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
@@ -435,7 +446,7 @@
                 }
             }
         });
-    });
+    });*/
     //#to-top button appears after scrolling
     var fixed = false;
     $(document).scroll(function() {
@@ -500,5 +511,5 @@ function signup($name, $email){
 }
 if (isset($_POST["signup"])) {
     signup($_POST["name"],  $_POST["email"]);
-}
+} 
 ?>
