@@ -29,6 +29,14 @@
     <link rel="stylesheet" type="text/css" href="css/formwizard.css">
     <script type="text/javascript" src="js/formwizard.js"></script>
 
+
+    <!-- voor video background -->
+    <link rel="stylesheet" type="text/css" href="css/backgroundVideo.css">  
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="js/backgroundVideo.js"></script>
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -63,14 +71,34 @@
     </nav>
 
     <!-- Header -->
-    <header id="top" class="header">  
-        <div class="text-vertical-center">
+    <header id="top" class="header"> 
 
-            <h1>SYRIA</h1>
-            <h3> Would you like to test your knowledge about syria ? </h3>
-            <br>
-            <a href="#successModal" data-toggle="modal" class="btn btn-dark btn-lg">Start now</a>
-        </div>
+       <div class="homepage-hero-module">
+                <div class="video-container">
+                    <div class="filter"></div>
+                    <video autoplay loop class="fillWidth hidden-sm hidden-xs">
+                        <source src="https://youtube.com/embed/vMZmEW3Hz8o?autoplay=1&controls=0&showinfo=0&autohide=1" type="video/mp4">Your browser does not support the video tag. I suggest you upgrade your browser.
+                    </video>
+                    <div style="width: 100%; height: 100%">
+                        <iframe frameborder="0" height="100%" width="100%" 
+                        src="https://youtube.com/embed/vMZmEW3Hz8o?autoplay=1&controls=0&showinfo=0&autohide=1">
+                      </iframe>
+                    </div> 
+                 </div> 
+            <div class="poster hidden-lg hidden-md">
+                <img src="../img/bg.jpg" alt="photo">
+            </div>
+            
+           
+
+            <div class="text-vertical-center">
+
+                <h1>SYRIA</h1>
+                <h3> Would you like to test your knowledge about Syria ? </h3>
+                <br>
+                <a href="#successModal" data-toggle="modal" class="btn btn-dark btn-lg">Start now</a>
+            </div>
+    </div>
 <!-- test qustion -->
         <div class="modal fade" id="successModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
             <div class="modal-dialog">
@@ -301,7 +329,7 @@
 
     <!-- Callout -->
     <aside class="callout">
-        <div class="text-vertical-center">
+        <div class="text-vertical-center_2">
            <h2>Palmyra, a city dripping with history and culture </h2>
                    <p class="lead"> was deliberately destroyed by the Islamic State of Levant due to its polytheistic statues. 
                     <br>It is a UNESCO World Heritage Site and a rare gem of the ancient world.</p>
