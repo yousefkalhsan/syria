@@ -383,10 +383,12 @@ footer {
  /*start arab_republic*/
  .business-headerr {
     height: 400px;
-    background: url('../img/syriaflagimage1.png') center center no-repeat scroll;
+    background: url('http://timeserver.ru/geoimages/backgrounds/day/001/7409_background_day.jpg') center center no-repeat scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
 }
+
+
 /*End arab_republic*/
