@@ -16,7 +16,7 @@
 .text-center{
     text-align: center;
     margin: 1.25rem 0;
-    border-bottom: 1px solid #dadada;
+    border-bottom: 1px ;
     padding: 1.25rem 0;
 }
 .radio label input {
