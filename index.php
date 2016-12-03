@@ -1,9 +1,4 @@
-<?php 
 
-include('dbconnect.php');
-
-
-?>
 <!DOCTYPE html>
 
 <head>
@@ -72,10 +67,13 @@ include('dbconnect.php');
             <li>
                 <a href="#contact" onclick=$("#menu-close").click();>Contact</a>
             </li>
+           <li>
+                 <a href="sing_in.html" onclick=$("#menu-close").click();>Sing In</a>
+            </li> 
         </ul>
     </nav>
 
-    <!-- Header -->
+    <!-- Header/ viedo -->
     <header id="top" class="header"> 
 
        <div class="homepage-hero-module">
@@ -90,9 +88,9 @@ include('dbconnect.php');
                       </iframe>
                     </div> 
                  </div> 
-            <div class="poster hidden-lg hidden-md">
-                <img src="../img/bg.jpg" alt="photo">
-            </div>
+            <!-- <div class="poster hidden-lg hidden-md">
+                <img src="img/4.jpg" alt="photo">
+            </div> -->
             
            
 
@@ -341,20 +339,7 @@ include('dbconnect.php');
         </div>
     </aside>
 
-    <!-- About -->
-    <section id="about" class="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 text-center">
-                    
-   
-  
-                </div>
-            </div>
-            <!-- /.row -->
-        </div>
-        <!-- /.container -->
-    </section>
+    
 
     <!-- Call to Action -->
     <aside class="call-to-action bg-primary">
@@ -423,7 +408,7 @@ include('dbconnect.php');
         var marker = new google.maps.Marker({position: cords, 
                                              map: map, 
                                              title: "Syria",
-                                             icon: 'img/pin.png'}
+                                             }
                                            );
                                    
     </script>
