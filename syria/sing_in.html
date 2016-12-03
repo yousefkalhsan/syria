@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Sign up and login form</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet"> 
+
+    <!-- Custom CSS -->
+    <link href="css/stylish-portfolio.css" rel="stylesheet"> 
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- log in  -->
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,100' rel='stylesheet' type='text/css'>
+  
+  
+      <link rel="stylesheet" href="css/sing_in.css">
+
+  
+</head>
+
+<body>
+  <body>
+
+      <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
+    <nav id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
+            
+            <li>
+                <a href="index.php" onclick=$("#menu-close").click();>Home</a>
+            </li>
+             <li>
+                   <a href="sing_in.html" onclick=$("#menu-close").click();>Sing In</a>
+              </li> 
+        </ul>
+    </nav>
+
+ 
+
+<div id="sing_in">
+  <div class="container">
+    <div class="backbox">
+      <div class="loginMsg">
+        <div class="textcontent">
+          <p class="title">Don't have an account?</p>
+          <p>Sign up Now.</p>
+          <button id="switch1">Sign Up</button>
+        </div>
+      </div>
+      <div class="signupMsg visibility">
+        <div class="textcontent">
+          <p class="title">Have an account?</p>
+          <p>Log in and Enjoy.</p>
+          <button id="switch2">LOG IN</button>
+        </div>
+      </div>
+    </div>
+    <!-- backbox -->
+
+    <div class="frontbox">
+      <div class="login">
+        <h2>LOG IN</h2>
+        <div class="inputbox">
+          <input type="text" name="email" placeholder="  EMAIL">
+          <input type="password" name="password" placeholder="  PASSWORD">
+        </div>
+        <p>FORGET PASSWORD?</p>
+        <button>LOG IN</button>
+      </div>
+
+      <div class="signup hide">
+        <h2>SIGN UP</h2>
+        <div class="inputbox">
+          <input type="text" name="fullname" placeholder="  FULLNAME">
+          <input type="text" name="email" placeholder="  EMAIL">
+          <input type="password" name="password" placeholder="  PASSWORD">
+        </div>
+        <button>SIGN UP</button>
+      </div>
+
+
+    </div>
+    <!-- frontbox -->
+  </div>
+
+  </div>
+</body>
+
+</html>
+  
+   <script src="js/sing_in.js"></script> 
+   
+    <script>
+    // Closes the sidebar menu
+    $("#menu-close").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+    // Opens the sidebar menu
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+  
+    </script>
+
+</body>
+</html>
