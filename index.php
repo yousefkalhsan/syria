@@ -68,7 +68,7 @@
                 <a href="#contact" onclick=$("#menu-close").click();>Contact</a>
             </li>
            <li>
-                 <a href="sing_in.html" onclick=$("#menu-close").click();>Sing In</a>
+                 <a href="sing_in.html" onclick=$("#menu-close").click();>Sign In</a>
             </li> 
         </ul>
     </nav>
