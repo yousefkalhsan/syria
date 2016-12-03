@@ -10,13 +10,18 @@ $(".hover").mouseleave(
   }
 );
 
-$(document).ready(function($) {
+	$(".hover").mouseleave(
+  function () {
+    $(this).removeClass("hover");
+  }
+);
+	
+			
+$(".active").mouseleave(
+  function () {
+    $(this).removeClass("active");
+  }
+);
 
-	$('.card__share > a').on('click', function(e){ 
-		e.preventDefault() // prevent default action - hash doesn't appear in url
-   		$(this).parent().find( 'div' ).toggleClass( 'card__social--active' );
-		$(this).toggleClass('share-expanded');
-    });
-  
-});
+
  
