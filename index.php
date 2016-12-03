@@ -341,7 +341,20 @@ include('dbconnect.php');
         </div>
     </aside>
 
-    
+    <!-- About -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    
+   
+  
+                </div>
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
 
     <!-- Call to Action -->
     <aside class="call-to-action bg-primary">
