@@ -88,7 +88,7 @@ session_start();
 
     <!-- Header/ viedo -->
     <header id="top" class="header"> 
-
+ <div class="col-lg-12 text-center">
        <div class="homepage-hero-module">
                 <div class="video-container">
                     <div class="filter"></div>
