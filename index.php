@@ -1,4 +1,7 @@
-
+<?php 
+include('dbconnector.php');
+session_start();
+ ?>
 <!DOCTYPE html>
 
 <head>
@@ -37,6 +40,13 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script src="js/backgroundVideo.js"></script>
 
+
+
+     <!-- voor animation  -->
+    <script src="js/wow.min.js"></script>
+    <script>new WOW().init(); </script>
+    <link rel="stylesheet" href="css/animate.css">
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -68,7 +78,10 @@
                 <a href="#contact" onclick=$("#menu-close").click();>Contact</a>
             </li>
            <li>
-                 <a href="sing_in.html" onclick=$("#menu-close").click();>Sign In</a>
+                 <a href="sing_in.php" onclick=$("#menu-close").click();>Sign In</a>
+            </li> 
+            <li>
+                  <a href="logout.php" onclick=$("#menu-close").click();> <?php echo "Log out  ".$_SESSION["login_user"]?> </a>
             </li> 
         </ul>
     </nav>
@@ -91,10 +104,9 @@
             <!-- <div class="poster hidden-lg hidden-md">
                 <img src="img/4.jpg" alt="photo">
             </div> -->
-            
            
+            <div class="text-vertical-center wow swing" data-wow-duration="4s">
 
-            <div class="text-vertical-center">
 
                 <h1>SYRIA</h1>
                 <h3> Would you like to test your knowledge about Syria ? </h3>
@@ -253,7 +265,7 @@
 
     <!-- Services -->
     <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
-    <section id="services" class="services bg-primary">
+    <section id="services" class="services bg-primary ">
         <div class="container">
             <div class="row text-center">
                 <div class="col-lg-10 col-lg-offset-1">
@@ -262,7 +274,7 @@
                     <div class="row">
                         <div class="col-md-3 col-sm-6">
                             <div class="service-item">
-                                <figure class="snip1566">
+                                <figure class="snip1566 wow flash" data-wow-delay="0s" data-wow-duration="1.5s">
   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Jordan_(orthographic_projection).svg/440px-Jordan_(orthographic_projection).svg.png" alt="sq-sample14" />
   <figcaption><i class="ion-android-add"></i></figcaption>
   <a href="Syrian_Arab_Republic.html"></a>
@@ -277,7 +289,7 @@
                         </div>
                         <div class="col-md-3 col-sm-6">
                             <div class="service-item">
-                               <figure class="snip1566">
+                               <figure class="snip1566 wow flash" data-wow-delay="1.5s" data-wow-duration="1.5s">
   <img src="https://drscdn.500px.org/photo/165979687/w%3D440_h%3D440/0a2ac4e2a0f7a2578cd0c02fd9c7d508?v=3" alt="sq-sample14" />
   <figcaption><i class="ion-android-add"></i></figcaption>
   <a href="Syria_History.html"></a>
@@ -292,7 +304,7 @@
                         </div>
                         <div class="col-md-3 col-sm-6">
                             <div class="service-item">
-                               <figure class="snip1566">
+                               <figure class="snip1566 wow flash" data-wow-delay="3s" data-wow-duration="1.5s">
   <img src="https://s-media-cache-ak0.pinimg.com/736x/f6/8e/df/f68edf2da67693711a2b7161a0f5c616.jpg" alt="sq-sample14" />
   <figcaption><i class="ion-android-add"></i></figcaption>
   <a href="Syrian_Food.html"></a>
@@ -307,7 +319,7 @@
                         </div>
                         <div class="col-md-3 col-sm-6">
                             <div class="service-item">
-                               <figure class="snip1566">
+                               <figure class="snip1566 wow flash" data-wow-delay="4.5s" data-wow-duration="1.5s">
   <img src="https://s-media-cache-ak0.pinimg.com/736x/c0/43/da/c043da94da4ea4c84f6783e823712db0.jpg" alt="sq-sample14" />
   <figcaption><i class="ion-android-add"></i></figcaption>
   <a href="Tourism_in_Syria.html"></a>
@@ -524,19 +536,3 @@
 </body>
 
 </html>
-<?php
-function signup($name, $email){
-    global $db;
-    $updated_at = $created_at = date("Y-m-d H:i:s");
-    $query_string = "insert into users (name , email , created_at, updated_at) values('$name' , '$email' , '$created_at', '$updated_at')";
-    $result = mysqli_query($db , $query_string);
-    if(!$result){
-        die ("<script>alert(\"Fail To Fill The Form please try again later " . mysqli_errno(). "\");</script>");
-    } else {
-        echo "<script>alert(\"Thanks For Fill the Form\");</script>";
-    }
-}
-if (isset($_POST["signup"])) {
-    signup($_POST["name"],  $_POST["email"]);
-} 
-?>

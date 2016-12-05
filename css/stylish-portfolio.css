@@ -120,13 +120,18 @@ hr.small {
 .sidebar-nav li a {
     display: block;
     text-decoration: none;
-    color: #999;
+    color: #60A08E;
+    font-size: 16px;
+    -webkit-transition: padding 0.9s ease;
 }
 
 .sidebar-nav li a:hover {
     text-decoration: none;
     color: #fff;
-    background: rgba(255,255,255,0.2);
+    font-size: 20px;
+    background: rgba(169, 68, 66, 0.9);
+    padding-left: 20px;
+    
 }
 
 .sidebar-nav li a:active,

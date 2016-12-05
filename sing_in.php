@@ -1,3 +1,11 @@
+
+<?php 
+include('dbconnector.php');
+
+
+
+ ?>
+
 <!DOCTYPE html>
 <html >
 <head>
@@ -38,7 +46,7 @@
                 <a href="index.php" onclick=$("#menu-close").click();>Home</a>
             </li>
              <li>
-                   <a href="sing_in.html" onclick=$("#menu-close").click();>Sing In</a>
+                   <a href="sing_in.php" onclick=$("#menu-close").click();>Sing In</a>
               </li> 
         </ul>
     </nav>
@@ -68,22 +76,30 @@
     <div class="frontbox">
       <div class="login">
         <h2>LOG IN</h2>
+        <form action="sing_in.php" method="POST">
         <div class="inputbox">
           <input type="text" name="email" placeholder="  EMAIL">
           <input type="password" name="password" placeholder="  PASSWORD">
-        </div>
+        
         <p>FORGET PASSWORD?</p>
-        <button>LOG IN</button>
+         <input type="submit" name="login" class="btn btn-default" value="LOG IN">
+         </div>
+        </form>
+        
+        <!-- <button>LOG IN</button> -->
       </div>
 
       <div class="signup hide">
         <h2>SIGN UP</h2>
+        <form action="sing_in.php" method="POST">
         <div class="inputbox">
           <input type="text" name="fullname" placeholder="  FULLNAME">
           <input type="text" name="email" placeholder="  EMAIL">
           <input type="password" name="password" placeholder="  PASSWORD">
+          <input type="submit" name="signup" class="btn btn-default" value="SIGN UP">
         </div>
-        <button>SIGN UP</button>
+        </form>
+        <!-- <button>SIGN UP</button> -->
       </div>
 
 
@@ -114,3 +130,51 @@
 
 </body>
 </html>
+
+<?php 
+function login($email, $password){
+  global $db;
+  $updated_at = date("Y-m-d H:i:s");
+  $query_string = "SELECT * FROM users WHERE email='$email' AND password='$password'";
+  $result = mysqli_query($db, $query_string);
+  if (!$result) {
+    die ("<script>alert(\"Fail To sign in please try again later, reason: " . mysqli_errno(). "\");</script>");
+  } else {
+    session_start();
+    while($row = mysqli_fetch_assoc($result)){
+      $myEmail  =$row['email'];
+      $_SESSION['login_user'] = $myEmail;
+      $query_string = "UPDATE users SET updated_at = '$updated_at' WHERE email = '$email'";
+      $result = mysqli_query($db, $query_string);
+   
+      break;  
+    }
+    //ob_start();
+    // header("Location: index.php");
+  
+
+    
+    echo "<script type='text/javascript'>window.location.href = 'index.php';</script>";
+  }
+}
+function signup($name, $email, $password){
+  global $db;
+  $updated_at = $created_at = date("Y-m-d H:i:s");
+  $query_string = "insert into users (name,email,password,created_at,updated_at) values('$name' ,'$email','$password' ,'$created_at', '$updated_at')";
+  $result = mysqli_query($db , $query_string);
+  if(!$result){
+    
+        die ("<script>alert(\"Fail To register please try again later, reason: " . mysqli_errno(). "\");</script>");
+    } else {
+      echo "<script>alert(\"Congrats!: You have registered Successfully.\");</script>";
+    }
+}
+if (isset($_POST["signup"])) {
+  signup($_POST["name"],$_POST["email"], $_POST["password"]);
+} else if(isset($_POST["login"])){
+  login($_POST["email"], $_POST["password"]);
+}
+
+?>
+
+
