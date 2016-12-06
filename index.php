@@ -113,11 +113,11 @@ session_start();
                 <h1>SYRIA</h1>
                 <h3> Would you like to test your knowledge about Syria ? </h3>
                 <br>
-                <a href="#successModal" data-toggle="modal" class="btn btn-dark btn-lg">Start now</a>
+                <a href="form.html " target="_blank" class="btn btn-dark btn-lg">Start now</a>
             </div>
     </div>
 <!-- test qustion -->
-        <div class="modal fade" id="successModal" tabindex="2" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <!-- <div class="modal fade" id="successModal" tabindex="2" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
             <div class="modal-dialog">  
                 <div class="modal-content">
                     <div class="modal-header modal-header-success">
@@ -248,7 +248,7 @@ session_start();
             </div>
         </div>
     </header>
- 
+  -->
     <!-- About -->
     <section id="about" class="about">
         <div class="container">
@@ -358,33 +358,53 @@ session_start();
     <!-- Call to Action -->
     <aside class="call-to-action bg-primary">
         <div class="container">
-     <div class="row">
-        <div class="col-lg-10 col-lg-offset-1 text-center"> 
-        <div id="disqus_thread"></div>
-            <script>
-
-            /**
-            *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-            *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
-            /*
-            var disqus_config = function () {
-            this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-            this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-            };
-            */
-            (function() { // DON'T EDIT BELOW THIS LINE
-            var d = document, s = d.createElement('script');
-            s.src = '//syriacoder.disqus.com/embed.js';
-            s.setAttribute('data-timestamp', +new Date());
-            (d.head || d.body).appendChild(s);
-            })();
-            </script>
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                   <h2 class="section-heading">Let's Get In Touch!</h2>
+                    <h3>  Fill the form and send it i will get back to you as soon as possible!</h3>
+                </div>
+                <form action="home.php" method="POST" >
+                <div class="col-lg-4 col-lg-offset-2 text-center">
+                    
+                    <div class="form-group">
+                <div class="input-group">
+                <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
+                <input type="text" name="name" class="form-control" placeholder="Enter Your Name" maxlength="50"  />
+                </div>
+                
+            </div>
             
-    
-       </div>
-    </div>
-</div>       
+            
+                </div>
+                <div class="col-lg-4 text-center">
+                   
+                    <div class="form-group">
+                <div class="input-group">
+                <span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span></span>
+                <input type="email" name="email" class="form-control" placeholder="Enter Your Email" maxlength="40" />
+                </div>
+                 </div>
+                  </div>
+                 <div class="col-lg-4 col-lg-offset-2 text-center">
+                    <br>
+                    <div class="form-group">
+                <div class="input-group">
+                
+                 <button type="submit" class="btn btn-block btn-primary" name="signup" value="signup" >Fill the form</button>
+                 
+                </div>
+                
+            </div>
+            
+            
+                </div>
+                 
+               
+                </form>
 
+                </div>
+            </div>
+        </div>
     </aside>
 
     

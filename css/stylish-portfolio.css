@@ -15,17 +15,7 @@ body {
 body {
     font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
-#my_typeform {
 
-display: inline-block;
-
-width: 800px;
-
-height: 600px;
-
-margin: 60px;
-
-}
 
 .text-vertical-center {
     /*display: table-cell;*/
