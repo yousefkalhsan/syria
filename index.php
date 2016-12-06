@@ -77,18 +77,20 @@ session_start();
             <li>
                 <a href="#contact" onclick=$("#menu-close").click();>Contact</a>
             </li>
+            <li role="separator" class= "divider"></li>
            <li>
                  <a href="sing_in.php" onclick=$("#menu-close").click();>Sign In</a>
             </li> 
             <li>
-                  <a href="logout.php" onclick=$("#menu-close").click();> <?php echo "Log out  ".$_SESSION["login_user"]?> </a>
+                  <a href="logout.php" onclick=$("#menu-close").click();> <?php echo "Log out / ".$_SESSION['login_name']?> </a>
             </li> 
+            <li role="separator" class= "divider"></li>
         </ul>
     </nav>
 
     <!-- Header/ viedo -->
     <header id="top" class="header"> 
- <div class="col-lg-12 text-center">
+
        <div class="homepage-hero-module">
                 <div class="video-container">
                     <div class="filter"></div>
@@ -115,8 +117,8 @@ session_start();
             </div>
     </div>
 <!-- test qustion -->
-        <div class="modal fade" id="successModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
+        <div class="modal fade" id="successModal" tabindex="2" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">  
                 <div class="modal-content">
                     <div class="modal-header modal-header-success">
                         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">[ × ]</button>
@@ -388,7 +390,8 @@ session_start();
                     <div class="form-group">
                 <div class="input-group">
                 
-                 <button type="submit" class="btn btn-block btn-primary" name="signup" value="signup" >Fill the form</button>
+                 <!-- <button type="submit" class="btn btn-block btn-primary" name="signup" value="signup" >Fill the form</button> -->
+                 <a href="form.html"  class="btn btn-block btn-success" >Fill the form</a>
                 </div>
                 
             </div>
@@ -458,6 +461,42 @@ session_start();
         </div>
         <a id="to-top" href="#top" class="btn btn-dark btn-lg"><i class="fa fa-chevron-up fa-fw fa-1x"></i></a>
     </footer>
+
+
+
+
+
+<div class="container">
+     <div class="row">
+        <div class="col-lg-10 col-lg-offset-1 text-center"> 
+        <div id="disqus_thread"></div>
+            <script>
+
+            /**
+            *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+            *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+            /*
+            var disqus_config = function () {
+            this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+            this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+            };
+            */
+            (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document, s = d.createElement('script');
+            s.src = '//syriacoder.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+            })();
+            </script>
+            
+    
+       </div>
+    </div>
+</div>       
+
+
+
+
     <!-- Custom Theme JavaScript -->
     <script>
     // Closes the sidebar menu
@@ -532,6 +571,7 @@ session_start();
         // Enable map zooming with mouse scroll when the user clicks the map
     $('.map').on('click', onMapClickHandler);
     </script>
+    <script id="dsq-count-scr" src="//syriacoder.disqus.com/count.js" async></script>
 
 </body>
 

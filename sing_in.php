@@ -93,7 +93,7 @@ include('dbconnector.php');
         <h2>SIGN UP</h2>
         <form action="sing_in.php" method="POST">
         <div class="inputbox">
-          <input type="text" name="fullname" placeholder="  FULLNAME">
+          <input type="text" name="name" placeholder="  FULLNAME">
           <input type="text" name="email" placeholder="  EMAIL">
           <input type="password" name="password" placeholder="  PASSWORD">
           <input type="submit" name="signup" class="btn btn-default" value="SIGN UP">
@@ -144,6 +144,8 @@ function login($email, $password){
     while($row = mysqli_fetch_assoc($result)){
       $myEmail  =$row['email'];
       $_SESSION['login_user'] = $myEmail;
+      $myName =$row['name'];
+      $_SESSION['login_name'] = $myName ;
       $query_string = "UPDATE users SET updated_at = '$updated_at' WHERE email = '$email'";
       $result = mysqli_query($db, $query_string);
    
@@ -165,9 +167,10 @@ function signup($name, $email, $password){
   if(!$result){
     
         die ("<script>alert(\"Fail To register please try again later, reason: " . mysqli_errno(). "\");</script>");
-    } else {
+    } else 
+      
       echo "<script>alert(\"Congrats!: You have registered Successfully.\");</script>";
-    }
+    
 }
 if (isset($_POST["signup"])) {
   signup($_POST["name"],$_POST["email"], $_POST["password"]);
