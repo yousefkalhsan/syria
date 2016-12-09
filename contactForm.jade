@@ -1,0 +1,26 @@
+.main
+	.bio
+		img(src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/735173/me.jpg" class="profile-img")
+		h3.header Alex Boffey
+		p Front-end developer, musician & Costa club card holder. I'm interested in design, performance & the future of the web...
+		a(href="https://twitter.com/alexboffey" class="bio-link") Twitter
+			i(class="fa fa-twitter")
+		a(href="https://github.com/alexboffey" class="bio-link") Github
+			i(class="fa fa-github")
+		a(href="http://codepen.io/alexboffey/" class="bio-link") CodePen
+			i(class="fa fa-codepen")
+		
+	.contact
+		form#form
+			legend(class="header") Get In Touch
+			fieldset
+				label(for="name-input" class="fa fa-user" aria-hidden="true")
+				input(type="text" placeholder="Your name..." id="name-input")
+			fieldset
+				label(for="email-input" class="fa fa-envelope" aria-hidden="true")
+				input(type="email" placeholder="Your email..." id="email-input")
+			fieldset
+				label(for="message-input" class="fa fa-comment" aria-hidden="true")
+				textarea(placeholder="Your Message..." id="message-input")
+			fieldset
+				button(type="submit" id="btn-submit") Send
