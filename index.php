@@ -359,15 +359,15 @@
     
 
     <!-- contact form -->
-  <div class="main">
+  <div class="main" id="contact">
   <div class="bio"><img src="img/abdullah.jpg" class="profile-img" style="margin-right: 15px"/ >
   <img src="img/yousef.JPG" class="profile-img" style="margin-right: 15px"/>
   <img src="img/fared.jpg" class="profile-img" style="margin-right: 15px" />
     <h3 class="header">Syria Coders</h3>
     <p>Full stack web  developers & we are 3 guys from Syria and we made this website as Graduation project form Restart Bootcamp coding in Rotterdam ..</p><a href="#" class="bio-link">Twitter<i class="fa fa-twitter"></i></a><a href="https://github.com/yousefkalhsan/syria" class="bio-link">Github<i class="fa fa-github"></i></a><a href="#" class="bio-link">CodePen<i class="fa fa-codepen"></i></a>
   </div>
-  <div class="contact">
-    <form id="form">
+  <div class="contact" >
+    <form id="form" method="post" action="email.php">
       <legend class="header">Get In Touch</legend>
       <fieldset>
         <label for="name-input" aria-hidden="true" class="fa fa-user"></label>
