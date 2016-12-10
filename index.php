@@ -88,6 +88,9 @@
                   <a href="logout.php" onclick=$("#menu-close").click();> <?php echo "Log out / ".$_SESSION['login_name']?> </a>
             </li> 
             <li role="separator" class= "divider"></li>
+            <li>
+                <a href="#DISQUS" onclick=$("#menu-close").click();>DISQUS</a>
+            </li>
         </ul>
     </nav>
 
