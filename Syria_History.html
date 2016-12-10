@@ -16,11 +16,39 @@
 
     <!-- Custom CSS -->
     <link href="css/stylish-portfolio.css" rel="stylesheet">
-  
 
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- voor question part -->
+    <link rel="stylesheet" type="text/css" href="css/modal.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" > 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/formwizard.css">
+    <script type="text/javascript" src="js/formwizard.js"></script>
+
+
+    <!-- voor video background -->
+    <link rel="stylesheet" type="text/css" href="css/backgroundVideo.css">  
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="js/backgroundVideo.js"></script>
+
+
+
+     <!-- for animation  -->
+    <script src="js/wow.min.js"></script>
+    <script>new WOW().init(); </script>
+    <link rel="stylesheet" href="css/animate.css">
+
+
+    <!-- for contact form  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css'>
+    <link rel="stylesheet" href="css/contactForm.css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -59,7 +87,7 @@
     </nav>
 
      <!-- About -->
-    <section id="aboutt" class="aboutt">
+    <section id="aboutt" class="about">
         <div class="container">
             <div class="row">
                 <header class="business-headerrr">
@@ -320,56 +348,35 @@
         </div>
         <!-- /.container -->
     </section>
-    <!-- Call to Action -->
-    <aside class="call-to-action bg-primary">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                   <h2 class="section-heading">Let's Get In Touch!</h2>
-                    <h3>  Fill the form and send it i will get back to you as soon as possible!</h3>
-                </div>
-                <form action="home.php" method="POST" >
-                <div class="col-lg-4 col-lg-offset-2 text-center">
-                    
-                    <div class="form-group">
-                <div class="input-group">
-                <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
-                <input type="text" name="name" class="form-control" placeholder="Enter Your Name" maxlength="50"  />
-                </div>
-                
-            </div>
-            
-            
-                </div>
-                <div class="col-lg-4 text-center">
-                   
-                    <div class="form-group">
-                <div class="input-group">
-                <span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span></span>
-                <input type="email" name="email" class="form-control" placeholder="Enter Your Email" maxlength="40" />
-                </div>
-                 </div>
-                  </div>
-                 <div class="col-lg-4 col-lg-offset-2 text-center">
-                    <br>
-                    <div class="form-group">
-                <div class="input-group">
-                
-                 <button type="submit" class="btn btn-block btn-primary" name="signup" value="signup" >Fill the form</button>
-                </div>
-                
-            </div>
-            
-            
-                </div>
-                 
-               
-                </form>
-
-                </div>
-            </div>
-        </div>
-    </aside>
+    <!-- contact form -->
+  <div class="main" id="contact">
+  <div class="bio"><img src="img/abdullah.jpg" class="profile-img" style="margin-right: 15px"/ >
+  <img src="img/yousef.JPG" class="profile-img" style="margin-right: 15px"/>
+  <img src="img/fared.jpg" class="profile-img" style="margin-right: 15px" />
+    <h3 class="header">Syria Coders</h3>
+    <p>Full stack web  developers & we are 3 guys from Syria and we made this website as Graduation project form Restart Bootcamp coding in Rotterdam ..</p><a href="#" class="bio-link">Twitter<i class="fa fa-twitter"></i></a><a href="https://github.com/yousefkalhsan/syria" class="bio-link">Github<i class="fa fa-github"></i></a><a href="#" class="bio-link">CodePen<i class="fa fa-codepen"></i></a>
+  </div>
+  <div class="contact" >
+    <form id="form" method="post" action="email.php">
+      <legend class="header">Get In Touch</legend>
+      <fieldset>
+        <label for="name-input" aria-hidden="true" class="fa fa-user"></label>
+        <input type="text" placeholder="Your name..." id="name-input"/>
+      </fieldset>
+      <fieldset>
+        <label for="email-input" aria-hidden="true" class="fa fa-envelope"></label>
+        <input type="email" placeholder="Your email..." id="email-input"/>
+      </fieldset>
+      <fieldset>
+        <label for="message-input" aria-hidden="true" class="fa fa-comment"></label>
+        <textarea placeholder="Your Message..." id="message-input"></textarea>
+      </fieldset>
+      <fieldset>
+        <button type="submit" id="btn-submit">Send</button>
+      </fieldset>
+    </form>
+  </div>
+</div>
 
     
 
@@ -393,6 +400,36 @@
                                            );
                                    
     </script>
+     <section id="DISQUS" >
+        
+<div class="container">
+     <div class="row">
+        <div class="col-lg-10 col-lg-offset-1 text-center"> 
+        <div id="disqus_thread"></div>
+            <script>
+
+            /**
+            *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+            *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+            /*
+            var disqus_config = function () {
+            this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+            this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+            };
+            */
+            (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document, s = d.createElement('script');
+            s.src = '//syriacoder.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+            })();
+            </script>
+            
+    
+       </div>
+    </div>
+</div> 
+</section >    
 
      <!-- Footer -->
     <footer>
