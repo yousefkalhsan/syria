@@ -849,6 +849,10 @@ background-color: #090d77;
 
 /*End syria history*/
 
-
+.gallery img {
+  float: left;
+  padding: 0 2px 2px 0;
+  /* Yes, you *can* adjust/remove padding. */
+}
 
 
